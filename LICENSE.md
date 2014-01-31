@@ -1,5 +1,5 @@
-ICIQ-Web
-========
+HTML4Scientistis
+===================
 
 
 
@@ -13,7 +13,8 @@ License
 
 
 
-[The source code of Information, Computing, Intelligence and Quantum (ICIQ) Community Website](https://github.com/ICIQ/iciq.github.io) is licensed under MIT license. This website is bult with HTML KickStart (Joshua Gatcke http://www.99lime.com | HTML KickStart) which is also [released under MIT Open Source license](https://github.com/joshuagatcke/HTML-KickStart#html-kickstart-is-free-and-open-source). Source codes of projects subjected to [ICIQ organization](https://github.com/ICIQ) may use different licenses. 
+[HTML4Scientists](https://github.com/emptymalei/html4scientists) is licensed under MIT license. This framework is built with HTML KickStart (Joshua Gatcke http://www.99lime.com | HTML KickStart) which is also [released under MIT Open Source license](https://github.com/joshuagatcke/HTML-KickStart#html-kickstart-is-free-and-open-source). 
+
 
 
 The MIT License (MIT)
@@ -37,16 +38,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-
-
-### CONTENT
-
-
-
-
-
-[![Creative Commons License](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
-
-<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Contensts of ICIQ Website</span> by [ICIQ Community](http://iciq.github.io) is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
