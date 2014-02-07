@@ -122,20 +122,20 @@
 
     </ul>
 
-    
-    
-    
-    
-    
-    
-    <!-- link css file for this page   --> 
-    
-        <link rel="stylesheet" type="text/css" href="css/bib-publication-list.css" media="all" />
 
 
 
-    
-    
+
+
+
+    <!-- link css file for this page   -->
+
+    <link rel="stylesheet" type="text/css" href="css/bib-publication-list.css" media="all" />
+
+
+
+
+
 
     <!-- All contents should be in a grid class div to make sure the web page is responsive -->
     <div class="grid">
@@ -191,24 +191,24 @@
         </div>
 
 
-<!-- link css file for this page   --> 
-    
+        <!-- link css file for this page   -->
+
         <link rel="stylesheet" type="text/css" href="css/bib-publication-list.css" media="all" />
 
 
 
 
 
-        
+
         <div class="col_12">
-        
-        
+
+
             <h3 class="center">My Publication List</h3>
-        
-        
+
+
         </div>
-        
-        
+
+
         <div class="col_12">
 
             <noscript>
@@ -219,66 +219,13 @@
             </noscript>
             <table id="pubTable" class="display sortable striped"></table>
             <pre id="bibtex" style="display:none;">
-
-
-                <!-- 
-
-Remove the S. W. Hawking paper and 
-
-______      _    __   _______ _   _______  ______ ___________   _____ _   _  ___________ _____ 
-| ___ \    | |   \ \ / /  _  | | | | ___ \ | ___ \_   _| ___ \ |_   _| | | ||  ___| ___ \  ___|
-| |_/ /   _| |_   \ V /| | | | | | | |_/ / | |_/ / | | | |_/ /   | | | |_| || |__ | |_/ / |__  
-|  __/ | | | __|   \ / | | | | | | |    /  | ___ \ | | | ___ \   | | |  _  ||  __||    /|  __| 
-| |  | |_| | |_    | | \ \_/ / |_| | |\ \  | |_/ /_| |_| |_/ /   | | | | | || |___| |\ \| |___ 
-\_|   \__,_|\__|   \_/  \___/ \___/\_| \_| \____/ \___/\____/    \_/ \_| |_/\____/\_| \_\____/ 
-                                                                                               
-                                                                                               
-                                                                                         
-for example:
-
-@article{Hartle:2010dq,
-      author         = "Hartle, James and Hawking, S.W. and Hertog, Thomas",
-      title          = "{Local Observation in Eternal inflation}",
-      journal        = "Phys.Rev.Lett.",
-      volume         = "106",
-      pages          = "141302",
-      doi            = "10.1103/PhysRevLett.106.141302",
-      year           = "2011",
-      eprint         = "1009.2525",
-      archivePrefix  = "arXiv",
-      primaryClass   = "hep-th",
-      SLACcitation   = "%%CITATION = ARXIV:1009.2525;%%",
-}
-@article{PhysRevLett.1.3,
-  title = {Magnetization in Single Crystals of Some Rare-Earth Orthoferrites},
-  author = {Bozorth, R. M. and Kramer, Vivian and Remeika, J. P.},
-  journal = {Phys. Rev. Lett.},
-  volume = {1},
-  issue = {1},
-  pages = {3--4},
-  numpages = {0},
-  year = {1958},
-  month = {Jul},
-  publisher = {American Physical Society},
-  doi = {10.1103/PhysRevLett.1.3},
-  url = {http://link.aps.org/doi/10.1103/PhysRevLett.1.3}
-}
-
-
-
-
-
-
-
--->
-
             </pre>
             <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
             <script type="text/javascript" src="js/bib-list.js"></script>
             <script type="text/javascript">
                 $(document).ready(function() {
-                    bibtexify("#bibtex", "pubTable", {
-//                        'tweet': 'emptymalei'
+                    bibtexify("data/publications.bib", "pubTable", {
+                        //                        'tweet': 'emptymalei'
                     });
                 });
             </script>
