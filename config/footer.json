@@ -1,0 +1,17 @@
+{"foo":[
+        {
+            "display":"<a href=\"#\" target=\"_blank\">[My Name]</a>"
+        },
+        {
+            "display":"<a href=\"#\" target=\"_blank\">[My Rearch Group]</a>"
+        },
+        {
+            "display":"<a href=\"#\">[Someone]</a>"
+        },
+        {
+            "display":"Built with <a href=\"https://guokrunion.github.io/html4scientists\" target=\"_blank\">HTML4Scientists</a>"
+        },
+        {
+            "display":"<a id=\"link-top\" href=\"#top\">Top</a>"
+        }
+]}

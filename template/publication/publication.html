@@ -87,7 +87,7 @@
         <li class="current">
             <a href="more.html">
                 <i class="icon-circle-blank"></i>Publications</a>
-        </li>        
+        </li>
         <li>
             <a href="more.html">
                 <i class="icon-circle-blank"></i>More</a>
@@ -135,24 +135,24 @@
 
 
 
-<!-- link css file for this page   --> 
-    
-        <link rel="stylesheet" type="text/css" href="css/bib-publication-list.css" media="all" />
+    <!-- link css file for this page   -->
+
+    <link rel="stylesheet" type="text/css" href="css/bib-publication-list.css" media="all" />
 
 
 
     <!-- All contents should be in a grid class div to make sure the web page is responsive -->
     <div class="grid">
-        
+
         <div class="col_12">
-        
-        
+
+
             <h3 class="center">My Publication List</h3>
-        
-        
+
+
         </div>
-        
-        
+
+
         <div class="col_12">
 
             <noscript>
@@ -222,13 +222,41 @@ for example:
             <script type="text/javascript">
                 $(document).ready(function() {
                     bibtexify("#bibtex", "pubTable", {
-//                        'tweet': 'emptymalei'
+                        //                        'tweet': 'emptymalei'
                     });
                 });
             </script>
 
 
         </div>
+
+
+
+        <!-- Footer -->
+        <!-- Footer -->
+
+
+
+        <!-- DO NOT MODIFY THE FOLLOWING PART IF YOU HAVE NO IDEA WHAT YOU ARE DOING!!! Create your own footer by modify/add contents in footer.json -->
+        <div class="clear"></div>
+        <div class="col_12">
+            <div id="footer"></div>
+            <script>
+                $.getJSON('config/footer.json', function(data) {
+                    var output = '<ul>';
+                    for (var i in data.foo) {
+                        output += '<li>' + data.foo[i].display + '</li>';
+                    }
+
+                    output += '</ul>';
+                    document.getElementById("footer").innerHTML = output;
+                });
+            </script>
+
+        </div>
+
+        <!-- END OF FOOTER -->
+        <!-- END OF FOOTER -->
     </div>
 
 
@@ -242,57 +270,23 @@ for example:
 
 
 
+    <!-- Delete the following tracking code and add your own. I recommend Google Analytics.  -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-
- 
-        <!-- Footer -->
-        <!-- Footer -->
-        <!-- Footer -->
-
-
-        <!-- Create your own footer. replace the # with proper links -->
-        <div class="clear"></div>
-        <div id="footer">
-            <span>
-                <a href="#" target="_blank">[My Name]</a>
-            </span>|
-            <span>
-                <a href="#" target="_blank">[My Rearch Group]</a>
-            </span>|
-            <span>By
-                <a href="#">[Someone]</a>
-            </span>|
-            <span>Built with
-                <a href="https://github.com/emptymalei/html4scientists" target="_blank">HTML4Scientists</a>.</span>
-
-            <!-- This is the back to top button. Don't touch it if you don't know that that means.-->
-            <a id="link-top" href="#top">Top</a>
-        </div>
-
-        <!--
-            <span>Built with
-            <a href="https://github.com/emptymalei/html4scientists">HTML4Scientists</a>.</span>
-		    -->
-
-
-
-        <!-- Delete the following tracking code and add your own. I recommend Google Analytics.  -->
-        <script>
-            (function(i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function() {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-            ga('create', 'UA-47681971-1', 'emptymalei.github.io');
-            ga('send', 'pageview');
-        </script>
+        ga('create', 'UA-47681971-1', 'emptymalei.github.io');
+        ga('send', 'pageview');
+    </script>
 
 
 

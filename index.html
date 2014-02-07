@@ -51,6 +51,10 @@
     <!-- Javascript -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/kickstart.js"></script>
+
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 
 <body>
@@ -118,9 +122,9 @@
 
     </ul>
 
-    
-    
-    
+
+
+
     <!-- Load a css files for this specific page  -->
 
 
@@ -209,6 +213,7 @@
                         [MY NAME] is .... I am a scientist. BLABLABLABLA. I am a scientist. BLABLABLABLA. I am a scientist. BLABLABLABLA. I am a scientist. BLABLABLABLA. I am a scientist. BLABLABLABLA. I am a scientist. BLABLABLABLA.
 
                     </p>
+                    <p style="height:1000px;"></p>
                 </div>
 
             </div>
@@ -220,41 +225,43 @@
         <!-- End of Part 2 -->
 
 
+
+
+
+        <!-- Footer -->
+        <!-- Footer -->
+
+
+
+        <!-- DO NOT MODIFY THE FOLLOWING PART IF YOU HAVE NO IDEA WHAT YOU ARE DOING!!! Create your own footer by modify/add contents in footer.json -->
+        <div class="clear"></div>
+        <div class="col_12">
+            <div id="footer"></div>
+            <script>
+                $.getJSON('config/footer.json', function(data) {
+                    var output = '<ul>';
+                    for (var i in data.foo) {
+                        output += '<li>' + data.foo[i].display + '</li>';
+                    }
+
+                    output += '</ul>';
+                    document.getElementById("footer").innerHTML = output;
+                });
+            </script>
+
+        </div>
+
+        <!-- END OF FOOTER -->
+        <!-- END OF FOOTER -->
+
+
+
     </div>
     <!-- End if Grid -->
 
 
 
 
-
-    <!-- Footer -->
-    <!-- Footer -->
-    <!-- Footer -->
-
-
-    <!-- Create your own footer. replace the # with proper links -->
-    <div class="clear"></div>
-    <div id="footer">
-        <span>
-            <a href="#" target="_blank">[My Name]</a>
-        </span>|
-        <span>
-            <a href="#" target="_blank">[My Rearch Group]</a>
-        </span>|
-        <span>By
-            <a href="#">[Someone]</a>
-        </span>|
-        <span>Built with
-            <a href="https://github.com/emptymalei/html4scientists" target="_blank">HTML4Scientists</a>.</span>
-
-        <!-- This is the back to top button. Don't touch it if you don't know that that means.-->
-        <a id="link-top" href="#top">Top</a>
-    </div>
-
-    <!--
-            <span>Built with
-            <a href="https://github.com/emptymalei/html4scientists">HTML4Scientists</a>.</span>
-		    -->
 
 
 

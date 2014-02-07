@@ -170,42 +170,42 @@
 
 
             <h6>Syllabus</h6>
-            
+
             <p>dahdahdah...</p>
-            
-                        <!-- Table Example -->
+
+            <!-- Table Example -->
 
             <h6>Course Schedule</h6>
 
-                <table cellspacing="0" cellpadding="0" class="sortable">
-                    <thead>
-                        <tr>
-                            <th>Date</th>
-                            <th>Topic</th>
-                            <th>Reading</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>Feb 14</th>
-                            <td>
-                                How to love
-                            </td>
-                            <td>
-                            	Read your heart
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Feb 15</th>
-                            <td>
-                                How to break up
-                            </td>
-                            <td>
-                            	Read her/his heart
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <table cellspacing="0" cellpadding="0" class="sortable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Topic</th>
+                        <th>Reading</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Feb 14</th>
+                        <td>
+                            How to love
+                        </td>
+                        <td>
+                            Read your heart
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Feb 15</th>
+                        <td>
+                            How to break up
+                        </td>
+                        <td>
+                            Read her/his heart
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
 
 
@@ -227,49 +227,49 @@
 
 
             <h6>Syllabus</h6>
-            
+
             <p>dahdahdah...</p>
-            
-                        <!-- Table Example -->
+
+            <!-- Table Example -->
 
             <h6>Course Schedule</h6>
 
-                <table cellspacing="0" cellpadding="0" class="sortable">
-                    <thead>
-                        <tr>
-                            <th>Date</th>
-                            <th>Topic</th>
-                            <th>Reading</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>Feb 14</th>
-                            <td>
-                                How to love
-                            </td>
-                            <td>
-                            	Read your heart
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Feb 15</th>
-                            <td>
-                                How to break up
-                            </td>
-                            <td>
-                            	Read her/his heart
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <table cellspacing="0" cellpadding="0" class="sortable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Topic</th>
+                        <th>Reading</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Feb 14</th>
+                        <td>
+                            How to love
+                        </td>
+                        <td>
+                            Read your heart
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Feb 15</th>
+                        <td>
+                            How to break up
+                        </td>
+                        <td>
+                            Read her/his heart
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
 
             <!-- Divider -->
             <hr class="alt2" style="margin:4em 0 4em 0" />
@@ -308,7 +308,31 @@
 
 
 
+        <!-- Footer -->
+        <!-- Footer -->
 
+
+
+        <!-- DO NOT MODIFY THE FOLLOWING PART IF YOU HAVE NO IDEA WHAT YOU ARE DOING!!! Create your own footer by modify/add contents in footer.json -->
+        <div class="clear"></div>
+        <div class="col_12">
+            <div id="footer"></div>
+            <script>
+                $.getJSON('config/footer.json', function(data) {
+                    var output = '<ul>';
+                    for (var i in data.foo) {
+                        output += '<li>' + data.foo[i].display + '</li>';
+                    }
+
+                    output += '</ul>';
+                    document.getElementById("footer").innerHTML = output;
+                });
+            </script>
+
+        </div>
+
+        <!-- END OF FOOTER -->
+        <!-- END OF FOOTER -->
 
 
 
@@ -325,34 +349,6 @@
 
 
 
-    <!-- Footer -->
-    <!-- Footer -->
-    <!-- Footer -->
-
-
-    <!-- Create your own footer. replace the # with proper links -->
-    <div class="clear"></div>
-    <div id="footer">
-        <span>
-            <a href="#" target="_blank">[My Name]</a>
-        </span>|
-        <span>
-            <a href="#" target="_blank">[My Rearch Group]</a>
-        </span>|
-        <span>By
-            <a href="#">[Someone]</a>
-        </span>|
-        <span>Built with
-            <a href="https://github.com/emptymalei/html4scientists" target="_blank">HTML4Scientists</a>.</span>
-
-        <!-- This is the back to top button. Don't touch it if you don't know that that means.-->
-        <a id="link-top" href="#top">Top</a>
-    </div>
-
-    <!--
-            <span>Built with
-            <a href="https://github.com/emptymalei/html4scientists">HTML4Scientists</a>.</span>
-		    -->
 
 
 

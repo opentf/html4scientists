@@ -224,7 +224,7 @@
             <script type="text/javascript" src="js/bib-list.js"></script>
             <script type="text/javascript">
                 $(document).ready(function() {
-                    bibtexify("data/publications.bib", "pubTable", {
+                    bibtexify("config/publications.bib", "pubTable", {
                         //                        'tweet': 'emptymalei'
                     });
                 });
@@ -236,6 +236,33 @@
 
 
 
+
+        <!-- Footer -->
+        <!-- Footer -->
+
+
+
+        <!-- DO NOT MODIFY THE FOLLOWING PART IF YOU HAVE NO IDEA WHAT YOU ARE DOING!!! Create your own footer by modify/add contents in footer.json -->
+        <div class="clear"></div>
+        <div class="col_12">
+            <div id="footer"></div>
+            <script>
+                $.getJSON('config/footer.json', function(data) {
+                    var output = '<ul>';
+                    for (var i in data.foo) {
+                        output += '<li>' + data.foo[i].display + '</li>';
+                    }
+
+                    output += '</ul>';
+                    document.getElementById("footer").innerHTML = output;
+                });
+            </script>
+
+        </div>
+
+        <!-- END OF FOOTER -->
+        <!-- END OF FOOTER -->
+
     </div>
 
 
@@ -257,34 +284,6 @@
 
 
 
-    <!-- Footer -->
-    <!-- Footer -->
-    <!-- Footer -->
-
-
-    <!-- Create your own footer. replace the # with proper links -->
-    <div class="clear"></div>
-    <div id="footer">
-        <span>
-            <a href="#" target="_blank">[My Name]</a>
-        </span>|
-        <span>
-            <a href="#" target="_blank">[My Rearch Group]</a>
-        </span>|
-        <span>By
-            <a href="#">[Someone]</a>
-        </span>|
-        <span>Built with
-            <a href="https://github.com/emptymalei/html4scientists" target="_blank">HTML4Scientists</a>.</span>
-
-        <!-- This is the back to top button. Don't touch it if you don't know that that means.-->
-        <a id="link-top" href="#top">Top</a>
-    </div>
-
-    <!--
-            <span>Built with
-            <a href="https://github.com/emptymalei/html4scientists">HTML4Scientists</a>.</span>
-		    -->
 
 
 

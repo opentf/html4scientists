@@ -186,6 +186,23 @@ only screen and (max-device-width: 980px) {
 #footer a {
     text-decoration: none;
 }
+
+#footer ul {
+    margin: 0;
+    padding: 0;
+}
+#footer ul li {
+    list-style-type: none;
+    display: inline !important;
+}
+#footer li:before {
+    content: " | ";
+}
+#footer li:first-child:before {
+    content: none;
+}
+
+
 /*---------------------------------
 	NOTICES - Modified
 -----------------------------------*/
