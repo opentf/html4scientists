@@ -7,6 +7,13 @@ HTML4Scientists
 
 ### How to use
 
+This template is designed to have the following features:
+
+1. All pages load same css and js files in head tag, unless other pointed out specifically.
+2. CSS/JS that is only used in that page is loaded in body tag unless it's not working.
+3. All pages have the same footer which is configured in config/footer.json file.
+4. Publication list can be automatically generated from config/publications.bib file by default or from an inline bib code (check template/publication/publication.html for example)
+
 
 #### General web pages
 
@@ -19,9 +26,10 @@ Things to change
 * All the codes with []
 * Check the links
 * Sync the menu and footer codes between pages
+* Google Analytics tracking code just before the closing of body tag. Should add your own in everypage unless you don't want to track.
 
 
-Refer to [HTML Kickstart](http://www.99lime.com/elements/) for more instructions about the built in elements.
+Refer to [HTML Kickstart](http://www.99lime.com/elements/) for more instructions about the built-in elements.
 
 
 
