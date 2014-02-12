@@ -51,4 +51,4 @@ Refer to [bib publication list](https://github.com/vkaravir/bib-publication-list
 
 ### Licenses
 
-[HTML4Scientists](https://github.com/GuokrUnion/html4scientists) is licensed under MIT license. This framework is built with HTML KickStart (Joshua Gatcke http://www.99lime.com | HTML KickStart) which is also [released under MIT Open Source license](https://github.com/joshuagatcke/HTML-KickStart#html-kickstart-is-free-and-open-source). 
+[HTML4Scientists](https://github.com/opentf/html4scientists) is licensed under MIT license. This framework is built with HTML KickStart (Joshua Gatcke http://www.99lime.com | HTML KickStart) which is also [released under MIT Open Source license](https://github.com/joshuagatcke/HTML-KickStart#html-kickstart-is-free-and-open-source). 
