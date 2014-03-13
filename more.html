@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+
+
+    <!-- A Template for Non HTML And Busy Scientists: HTML4Scientists; First Created By
+		[OctoKitty](https://github.com/emptymalei)
+		[Open Task Force](https://github.com/opentf)
+        [CosmologyTaskForce](https://github.com/CosmologyTaskForce)
+    -->
+
+    <!-- This template uses HTML Kickstart as the framework. Refer to HTML Kickstart for documentations. -->
+
+
+
+    <!-- META -->
+
+
+
+    <!-- Put Scientist's Name Here -->
+
+    <title>[Scientist's Name] | [Department or Research Areas or whatever]</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+
+
+    <!-- Fill up the keywords, description, author -->
+
+    <meta name="keywords" content="[Put Key Words Here, for example the research area, names or department...]">
+    <meta name="description" content="[your description]" />
+    <meta name="author" content="[author here]">
+
+
+
+
+
+
+    <!-- Make sure to change this to your own favion. Favicon will be shown as a icon of the browser tab when someone browses this website. -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/kickstart.js"></script>
+</head>
+
+<body>
+
+
+
+    <!-- Top Main Menu Horizontal -->
+    <ul class="menu mainmenu">
+
+        <!-- current class will be diplayed in a different style. Make sure to add current class to the right menu. -->
+        <li>
+            <a href="index.html">
+                <i class="icon-home"></i>Home</a>
+        </li>
+        <li>
+            <a href="research.html">
+                <i class="icon-magic"></i>Research</a>
+        </li>
+        <li>
+            <a href="cv.html">
+                <i class="icon-trophy"></i>CV</a>
+        </li>
+        <li>
+            <a href="courses.html">
+                <i class="icon-book"></i>Courses</a>
+        </li>
+        <li class="current">
+            <a href="more.html">
+                <i class="icon-circle-blank"></i>More</a>
+        </li>
+
+        <!-- You can include more menus, for example some scientists may want to add a page called PRESS/MEDIA/BOOKS -->
+
+
+
+
+
+
+
+
+
+        <!-- Add some SNS account links or something Can remove this safely -->
+
+        <li class="menusocial">
+
+            <!-- Google Plus profile link!!!! -->
+            <a href="[your Google Plus profile link here]" target="_blank">
+                <i class="icon-google-plus-sign icon-2x"></i>
+            </a>
+        </li>
+        <li class="menusocial">
+
+            <!-- Link to your lab. can be removed as well -->
+            <a href="[link to your lab]" target="_blank">
+                <i class="icon-beaker icon-2x"></i>
+            </a>
+        </li>
+
+
+        <!-- VERY IMPORTANT! Change this to the name you pick. For example this can be your name, or your research group. -->
+        <!-- Also change the link of your website -->
+        <li class="sitename">
+            <a href="[link of your website.]">[Website Name/Name shown at the top right of every page]</a>
+        </li>
+
+
+    </ul>
+
+
+
+
+    <!-- All contents should be in a grid class div to make sure the web page is responsive -->
+    <div class="grid">
+
+
+        <div class="col_12">
+
+
+
+            <!-- Divider -->
+            <hr class="section" />
+
+
+
+            <h3 class="center">
+                <a id="book">My New Book</a>
+            </h3>
+
+            <ul>
+                <li>
+                    <img src="http://arxiv.org/favicon.ico" class="ficon">
+                    <a href="arxiv.org">arXiv.org</a>
+                </li>
+            </ul>
+
+
+
+            <!-- Divider -->
+            <hr class="section" />
+
+
+
+
+            <h3 class="center">
+                <a id="scifi">My Science Fiction</a>
+            </h3>
+            <ul>
+                <li>
+                    <img src="http://dailysciencefiction.com/favicon.ico" class="ficon">
+                    <a href="http://dailysciencefiction.com/">Daily Science Fiction</a>
+                </li>
+            </ul>
+
+
+
+            <!-- Divider -->
+            <hr class="section" />
+
+
+
+
+            <h3 class="center">
+                <a id="resources">Resources</a>
+            </h3>
+
+            <ul>
+
+
+                <li>Massive open online courseware
+                    <ul>
+                        <li>
+                            <img src="https://www.edx.org/sites/default/files/theme/favicon.png" class="ficon">
+                            <a href="https://www.edx.org/">edX</a>
+                        </li>
+                        <li>
+                            <img src="https://www.coursera.org/favicon.ico" class="ficon">
+                            <a href="https://www.coursera.org/courses">Coursera</a>
+                        </li>
+                        <li>
+                            <img src="https://www.udacity.com/favicon.ico" class="ficon">
+                            <a href="https://www.udacity.com/courses">UDacity</a>
+                        </li>
+                        <li>
+                            <img src="http://mooc.guokr.com/favicon.ico" class="ficon">
+                            <a href="http://mooc.guokr.com/">MOOC学院</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+
+        <!-- Footer -->
+        <!-- Footer -->
+
+        <!-- DO NOT MODIFY THE FOLLOWING PART IF YOU HAVE NO IDEA WHAT YOU ARE DOING!!! Create your own footer by modify/add contents in footer.json -->
+        <div class="clear"></div>
+        <div class="col_12">
+            <div id="footer"></div>
+            <script>
+                $.getJSON('config/footer.json', function(data) {
+                    var output = '<ul>';
+                    for (var i in data.foo) {
+                        output += '<li>' + data.foo[i].display + '</li>';
+                    }
+
+                    output += '</ul>';
+                    document.getElementById("footer").innerHTML = output;
+                });
+            </script>
+
+        </div>
+
+        <!-- END OF FOOTER -->
+        <!-- END OF FOOTER -->
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Delete the following tracking code and add your own. I recommend Google Analytics.  -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-47681971-1', 'emptymalei.github.io');
+        ga('send', 'pageview');
+    </script>
+
+
+
+
+
+
+
+    <!-- Don't touch these -->
+</body>
+
+</html>
